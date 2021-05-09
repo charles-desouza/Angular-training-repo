@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- <app-success></app-success>
+            <app-warning></app-warning> -->
+
+            <input type="text" [(ngModel)]="userName">
+            <p>{{userName}}</p>
+            <br />
+            <button class="btn btn-primary" (click)="onReset()" [disabled]="checkIfempty()">Click me</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <input type="text" class="form-control"
+             (input)="onUpdatedServerName($event)"
+            >
+
+            <p>Server name {{serverName}}</p>
+        </div>
+    </div>
+</div>
